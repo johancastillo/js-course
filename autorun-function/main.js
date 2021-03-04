@@ -1,10 +1,12 @@
 
 (function(){
+
+    let hiEl = document.getElementById("hi")
     
     let name = prompt("Your name: ")
 
     const sayHi = () => {
-        alert(`Hello ${name}`)
+        hiEl.innerHTML = `Hello ${name}`
     }
 
     sayHi()
